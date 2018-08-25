@@ -27,11 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:text="HMJSI Mobile"
-            android:textSize="18dip"
-            android:textStyle="bold"
-            android:textColor="@color/hmjsi"/>
+            android:layout_marginTop="5dp"/>
 
         <View
             android:id="@+id/View1"
@@ -110,25 +106,6 @@
             android:layout_gravity="center"
             android:background="@color/garis" />
 
-        <Button
-            android:id="@+id/btn_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/info"
-            android:textColor="#fff"
-            android:text="Info Anggota"
-            android:onClick="clikInfo"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btn_logout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#636363"
-            android:textColor="#fff"
-            android:text="Logout" />
 
     </LinearLayout>
 

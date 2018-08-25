@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_logout;
+//    Button btn_logout;
     TextView txt_nama, txt_username;
     String nama, username;
     SharedPreferences sharedpreferences;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         txt_nama = (TextView) findViewById(R.id.txt_nama);
         txt_username = (TextView) findViewById(R.id.txt_username);
-        btn_logout = (Button) findViewById(R.id.btn_logout);
+//        btn_logout = (Button) findViewById(R.id.btn_logout);
 
         sharedpreferences = getSharedPreferences(Login.my_shared_preferences, Context.MODE_PRIVATE);
 
@@ -36,28 +36,28 @@ public class MainActivity extends AppCompatActivity {
         txt_nama.setText(": " + nama);
         txt_username.setText(": " + username);
 
-        btn_logout.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                // update login session ke FALSE dan mengosongkan nilai nama dan username
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putBoolean(Login.session_status, false);
-                editor.putString(TAG_nama, null);
-                editor.putString(TAG_USERNAME, null);
-                editor.commit();
-
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                finish();
-                startActivity(intent);
-            }
-        });
+//        btn_logout.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                // update login session ke FALSE dan mengosongkan nilai nama dan username
+//                SharedPreferences.Editor editor = sharedpreferences.edit();
+//                editor.putBoolean(Login.session_status, false);
+//                editor.putString(TAG_nama, null);
+//                editor.putString(TAG_USERNAME, null);
+//                editor.commit();
+//
+//                Intent intent = new Intent(MainActivity.this, Login.class);
+//                finish();
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
-    public void clikInfo(View view){
-        Intent intent = new Intent(MainActivity.this, Info.class);
-        startActivity(intent);
-    }
+//    public void clikInfo(View view){
+//        Intent intent = new Intent(MainActivity.this, Info.class);
+//        startActivity(intent);
+//    }
 }
